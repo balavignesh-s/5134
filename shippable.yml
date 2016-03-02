@@ -2,11 +2,12 @@ node_js:
   - '0.12'
 env:
   global:
-    - secure: FUSWffa0dpv7F3+3VUrr4fzND4bdRGa4h+o+IK0w27J81qIBbemTjmiTHMZKSCRpUN05vIrPkRvCvzoWofuj1jS93Vwusl56ShlUCTFbjRdfO0GynmuDXrwty+5GAqw1/Nzp3z68mz4b6xkeanEEZkfLY25hs4cetThP+sZ+z4aFBE4LDco1SLRBd45+AxarwYuJHDV6EPa+k8ciB7+rlpZrNl8zXxF9lQbEnQg6CtR47CzR0jKNyNgUlSYdVTiZf6UPhifa7qIvAs8Hx9cCTdjWxdlcxPV8P+w3G6yRRwcKrP/+yL8zVS+n67x6br9338XgBjGoxYqpUKyX13Ow3Q==    - a=one
+    - secure: FUSWffa0dpv7F3+3VUrr4fzND4bdRGa4h+o+IK0w27J81qIBbemTjmiTHMZKSCRpUN05vIrPkRvCvzoWofuj1jS93Vwusl56ShlUCTFbjRdfO0GynmuDXrwty+5GAqw1/Nzp3z68mz4b6xkeanEEZkfLY25hs4cetThP+sZ+z4aFBE4LDco1SLRBd45+AxarwYuJHDV6EPa+k8ciB7+rlpZrNl8zXxF9lQbEnQg6CtR47CzR0jKNyNgUlSYdVTiZf6UPhifa7qIvAs8Hx9cCTdjWxdlcxPV8P+w3G6yRRwcKrP/+yL8zVS+n67x6br9338XgBjGoxYqpUKyX13Ow3Q==
+    - a=one
   matrix:
-    - secure: YlLdyHzh2v39G6ety0Tg38nnIAsEd0Vu84banjhmndiRiZmZd1O7/fYBnXisoNgiEgWfeQzazGnn+XCz+61p3KNvLDAjlD4x6GBaGkmVKobUPX9ES1q2dcD7/+WjjeR/w+aq4xSUAdKrJiRR1n2H6ZcsXHRir2+IfIBOqq/z1uQ3a4w2d7PiZeH7RP4di9zl6FoEvesL+lJ2tqcGJf2/Lx29gKYwpy4cb72+IC+WQR2/3bPSyghA3eTAlUSyQobh7RNsCZzanL71FaqGUl8x1mIXOJIsszb6a+IGwe9FtBOeoEzi84RjcLiXtgT4D93+gvfFy2Y+PU6dOzDfoYeh+Q==    - b=two
-    - secure: RrkYI/bVcDCqYTp2D/K9p1QsmjwC6Zqb5wdKR0M+n/lv8+Nc4oa/rqzrydhzXz7+21XbHbiHt7JnmG784d+k2Lz4Nc+SjV3cZM0/Gr0Dy8C+lG2cFUoi7QMJ83oFN7vjKdwyiKalBDv4yLYCdILSSuX+KAv7GJ736Ty2mJamEnzRvvjhVHkLGuAEWGOjMLCN8sBkrBfmrZi8NFZmeQtF4ZNnxae/1tPcdaIFFGHXnNaBOtLOjshYZ8KN1jPB8Ug5zYmvb/MLtzEkivRek7MJ/ahNNXDpMs6cBZtcyNSdgvAZOrDYxoVnH3nzv9c04lZSPgbOm1ubjax6MmoXH0sIrg==    - secure: CZaLyoZ9MwwQBKmL/TVR9B5xuiz/l9FCc/pcUkTXeSszv1PgLxMaPUXSiBaPimq2G2W+2KYERppz9DpyNG9M6UFptwDa2StLi2aKKabIcJ69/QABAjmro0pkGgxrIPzZlk/E6T+wdp2cq8yPQJHBTtOpRDZYAJoj1YdQW6mk/99zCSkBFgHszlmLJf7CCtbuDl0DsQaM1tZ5LSAzRpLxsnUgpjYQAPiRIB0JzcKsDwBiv/V0w/GnhpIl2DZ9GKBdPyYsDho5KQ0VP9L6vLW3XpfuSX3OybZNbBKIsjh21flhvr+XvoJesh0+nbnVpuIWr9JEd1vmD+1N+2wovMAkkQ==
-    - rum=bacardi
+    - secure: YlLdyHzh2v39G6ety0Tg38nnIAsEd0Vu84banjhmndiRiZmZd1O7/fYBnXisoNgiEgWfeQzazGnn+XCz+61p3KNvLDAjlD4x6GBaGkmVKobUPX9ES1q2dcD7/+WjjeR/w+aq4xSUAdKrJiRR1n2H6ZcsXHRir2+IfIBOqq/z1uQ3a4w2d7PiZeH7RP4di9zl6FoEvesL+lJ2tqcGJf2/Lx29gKYwpy4cb72+IC+WQR2/3bPSyghA3eTAlUSyQobh7RNsCZzanL71FaqGUl8x1mIXOJIsszb6a+IGwe9FtBOeoEzi84RjcLiXtgT4D93+gvfFy2Y+PU6dOzDfoYeh+Q==
+    - b=two
+    - secure: RrkYI/bVcDCqYTp2D/K9p1QsmjwC6Zqb5wdKR0M+n/lv8+Nc4oa/rqzrydhzXz7+21XbHbiHt7JnmG784d+k2Lz4Nc+SjV3cZM0/Gr0Dy8C+lG2cFUoi7QMJ83oFN7vjKdwyiKalBDv4yLYCdILSSuX+KAv7GJ736Ty2mJamEnzRvvjhVHkLGuAEWGOjMLCN8sBkrBfmrZi8NFZmeQtF4ZNnxae/1tPcdaIFFGHXnNaBOtLOjshYZ8KN1jPB8Ug5zYmvb/MLtzEkivRek7MJ/ahNNXDpMs6cBZtcyNSdgvAZOrDYxoVnH3nzv9c04lZSPgbOm1ubjax6MmoXH0sIrg==    - rum=bacardi
 build:
   preci: 
     - date -u
