@@ -12,3 +12,7 @@ build:
     - date -u
   ci:
     - echo "This is !"
+integrations:
+  hub:
+    - integrationName: myDocker
+      type: docker
