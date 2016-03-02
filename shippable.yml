@@ -7,7 +7,7 @@ env:
     - b=two
   matrix:
     - secure: X9xP61M0Rlt+pQskQevO9Azov0PhBmKZPXySMpnLStDA2jVr1to1h8h91oFmPbWNa6KRrQEazVYEUykQ2+R9c1CVstEACEkkkWSPyuOfTcLIloQXPB0zQdo+K3odp2l/fi1OIWP+4iv1ogMw7RkEgX56GM+xRgUmpz9kbPQr4G0w46ffEcdyw+jh8fzH7d1lAUmxnqzzDUqfr1QTCyUZsLhTgVEZtsY4OB75wLxmtac9TXwp7/NkNq8CUqWCP8348EQEatN3inUlE+7FRKzAipufhOslwZoe9aOP8unwPq/fU58uWaqDMe8aLJTQg1E4ls7ol8sDOWUoTgqjQdgKog==
-    - b=two
+    - b=tw
     - secure: CZaLyoZ9MwwQBKmL/TVR9B5xuiz/l9FCc/pcUkTXeSszv1PgLxMaPUXSiBaPimq2G2W+2KYERppz9DpyNG9M6UFptwDa2StLi2aKKabIcJ69/QABAjmro0pkGgxrIPzZlk/E6T+wdp2cq8yPQJHBTtOpRDZYAJoj1YdQW6mk/99zCSkBFgHszlmLJf7CCtbuDl0DsQaM1tZ5LSAzRpLxsnUgpjYQAPiRIB0JzcKsDwBiv/V0w/GnhpIl2DZ9GKBdPyYsDho5KQ0VP9L6vLW3XpfuSX3OybZNbBKIsjh21flhvr+XvoJesh0+nbnVpuIWr9JEd1vmD+1N+2wovMAkkQ==
 
 build:
