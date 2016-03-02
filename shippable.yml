@@ -6,8 +6,10 @@ env:
   matrix:
     - secure: fDOpzzO1pWkSpLq6sIr0kEAxbvHSzdBPFTmma7yqCejqxrz30CWG0ez0E/n+GXC6v1NW4VVdrBjh1bVUOMTof56XhYAapUP73kir+18spezwDVwget8JTMLqxv7v86kxEVBV8R1R/SvhY+26tKGHvHZpMl+aJgy7by2UZMasH0Teh1YXqC/qKw4Yhls5QzZJ6bolMYhfBzbPiNDXBqi02+r6UtZgU9Cl+s53e+WBKYJUFTSTc/xysl9lwPQUklLiJX83BAJ6Ul0UVG+hMDs3gDx5SB0LGMWM4cWFMzWz0pUU+bV6MLv0hmfVQvi9MhJ9psSYqEYTFwIqdwXI62/Kjw==
     - two=2
+    - secure: bJPhMPItliaTN1wtEdPOOISwtriA+O2rRFyZGlqrrfWji5Cg/9LmOCxQHuQqqx2SmMDNyMgyrH8Q3Tx3Ttns9WkonYs9eP1f5XCS8F8MbOAelyX+lbUljqiFmTbVdDVCsJ7pQ6VdVlurrgRkqyBnocAIxPM8bmhol4C1yOZjNMXUojm98jVjxvYZ4HqHWCyQlMws3zIFGCqtG6RfPhVQ7cdTAlToMVGwsMDMrMg0gpqpnjCnvrIiPEkPatAsHbaYLEgIBqJb2Fux/yr3j5qmZB1UPljEYR/ACAcjWijxeGFXTe9hViG4MTPWlkbgtaKfD+tuE2cuEm5vsUw+/YHezA==
     - three=33
     - secure: CKvSniAbUKC0aA9hrK3U3OAd1BMEPxB3MIQ5X2flKXsrg/7BDc5JfYrjzWL+hVc0LDR4UiCemE9BHrGUwNC2YaYwubEK2xVG005HiuGfN6JU21IXcPM9dsNttdpu5kzXwZ7Jt3pyAH4z7E9Ql7NWcvmqyscvwPRW+kz/rR9JA2k0dYcT0XS8kcHm7ixi7Mgxo9H3gXAOd7ZgAt3s+kGfAE2g5xk+xDs3jOXuWqWrOghKsiQ6mtSiCStBi40kYXMBjRkDBubwXXZfXOjxvB1pwvojHoiU+k8j727L4OvKrfFgGZse3qx+etthIM1cicon2PC9/TVUeg8+BZsAXI6syg==
+    
 build:
   preci:
     - date -u
