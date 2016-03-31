@@ -8,7 +8,7 @@ env:
     - three=3
 build:
   ci:
-    - echo "isfork: $IS_FORK"
+    - echo "is fork $IS_FORK"
 integrations:
   hub:
     - integrationName: myDocker
