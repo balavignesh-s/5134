@@ -13,5 +13,5 @@ build:
     - echo "This is !"
 integrations:
   hub:
-    - integrationName: Docker Hub
+    - integrationName: myDocker
       type: docker
