@@ -7,10 +7,9 @@ env:
     - two=2
     - three=3
 build:
-  preci:
-    - echo "is_fork $IS_FORK"
   ci:
-    - echo "This is !"
+
+    - echo "isfork: $IS_FORK"
 integrations:
   hub:
     - integrationName: myDocker
