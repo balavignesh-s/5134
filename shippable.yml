@@ -20,6 +20,7 @@ integrations:
             - master
       on_success: always
       on_failure: always
+      on_failing_coverage: always
 
   hub:
     - integrationName: myDocker
