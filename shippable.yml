@@ -1,6 +1,11 @@
 language: node_js
 
 node_js: 0.12
+env:
+  matrix:
+    - one=1
+    - two=2
+    - three=3
 
 build:
   ci:
