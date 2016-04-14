@@ -9,19 +9,3 @@ env:
 build:
   ci:
     - echo "is fork $IS_FORK"
-integrations:
-  notifications:
-    - integrationName: mySlack
-      type: slack
-      recipients:
-        - "#coverage"
-      branches:
-          only:
-            - master
-      on_success: always
-      on_failure: always
-      on_failing_coverage: always
-
-  hub:
-    - integrationName: myDocker
-      type: docker
