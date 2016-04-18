@@ -9,4 +9,3 @@ env:
 build:
   ci:
     - echo "is fork $IS_FORK"
-    - echo "bala"
