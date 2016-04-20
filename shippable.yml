@@ -5,7 +5,6 @@ env:
     - one=1
   matrix:
     - two=2
-    - three=3
 build:
   ci:
     - echo "is fork $IS_FORK"
