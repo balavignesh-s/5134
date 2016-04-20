@@ -1,3 +1,3 @@
 # 5134 - issuetest
-bar
+ bar
    changed
