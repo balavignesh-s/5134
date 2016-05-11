@@ -6,5 +6,8 @@ env:
   matrix:
     - two=2
 build:
+  cache: true
+  
   ci:
+    - npm install
     - echo "is fork $IS_FORK"
