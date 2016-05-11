@@ -14,5 +14,5 @@
     "winston": "git://github.com/flatiron/winston#master",
     "bigpipe": "bigpipe/pagelet",
     "plates": "https://github.com/flatiron/plates/tarball/master"
-  },
+  }
 }
