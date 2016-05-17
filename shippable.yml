@@ -7,8 +7,6 @@ env:
     - secure: IrWb9lp+jhIGZsqP1wvY0etAsDlILrGvCHiWqMj87/BInydA8yzoJyZiExCWCo94D88SrmTxBDY2Aeqn97Wb5fQ6V23lEoXAJ8GQo1X2pU8Xe2QOnVocRXT+SwW3Qh9pA/5j9wQIGG5yd3YHhn39k6jYjbnjwN0TJtx4g6K3/a2DoBvIEeJzmiFVIj8sBhQOCBRCuTc5OkkhhFw6GJZy5OOy/XfhtEJyfx0XVEr3lNdI2LsKIzSgsJ9EVNRMqcVEjIMLSdKqltGWXnaFvn6zD4ZicvFxxh45aIgMg5RjOAdLfVQZ5WX5Kxe/9zCUIIArc62g1YRp3DY1Vdo5dy/LEA==
 build:
   cache: true
-  pre_ci:
-  - cat ~/.aws/credentials
   ci:
     - echo $AWS_ACCESS_KEY_ID
     - echo $AWS_SECRET_ACCESS_KEY
