@@ -9,5 +9,6 @@ build:
   cache: true
   
   ci:
+    - aws s3api get-object --bucket bababa1234 --key cache/56cd870bc77dae78a8e98dfc
     - npm install
     - echo "is fork $IS_FORK"
