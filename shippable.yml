@@ -3,11 +3,10 @@ node_js:
 env:
   global:
     - one=1
-  matrix:
-    - two=2
+    - secure: cqmrn3jTq3ZK08V6LIIR3OZSbBh9GVjweqaENflc9uYI9tWIlYbHfC0WzAw0/Rn3MFM5H4ss4GiWl9VofYT+Igui02f6wO65eiIUhkt/1zp9rSabuhL9vjL0NIS7fp6pWZ+bkM4K0HHLDlsKkIuPAMTEyYx57LlmR1B2PgWbt3YMpNJqPnSPnitpwBZpnGq37/JejIK7Jo/ix8AvCR6OoH8G/2pTG/tH7xbIrPBJcSrRI6+gRorM7CfKKDSnZ/syUC3KsFtLmm6JBZu5dFUV18amPcIdwCKgWHe38KGiSxHAxUbZ5YPs4OfBHZbzu0MjWdSl0FVjvNCmubTfElDW9g==
+    - secure: nVk7IBNDsHgRzN4zQaw/7GsV8q3IJ4Qy6Awed8FwUGUmq8khYbIS1a11SM9K5apAZDRDMgqXInGNroJRHCoVTauXz9CC+nIP73VypSj2VwpLiQP2//wjoPDKL/qNMDHlBSBcW8YvEVMPh04x7+9bUOIWEaVwS40mvs/+9JUAxYUBEX1M5EEDZQaNzSu1j5YZfdmV2KIDaU4HtZYDdsadDc8ntKJiD6aQc25ADO7CjEHa/QPlYv+TjfXndauXOvgUUOE8u1yeKtt0xQGxHYE0jQDK6oNOb/VtLYjYaXrHioxST+OYqd12Gc/lwLK72vT146W3hez1Mq11YO3eOcftpg==	
 build:
   cache: true
-  cache_container: true
   
   ci:
     - npm install
