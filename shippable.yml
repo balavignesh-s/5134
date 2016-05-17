@@ -3,13 +3,15 @@ node_js:
 env:
   global:
     - one=1
-    - secure: C8C2wimaM388L5cH820ej1IN+4cFaB+f9aE1cwhUQWt61pmT5iWApCrRb37utYb4CtBWRetU+j1hcBtEjvkdtXoJ/ONmc8ZM7kCfD5X/eWYmK2Fa4yOaFS7iMsiUxRXl8y2a3sbPhGzk5OHl84v5Q1xRJf5fqUYj7QaYNjuFmo9qHayzfqtb/rKBa9HYr3ZRXzhOcSYR96brYpC44+4GY42gbHRXuHcKnYuw6ZDRLfKhTLH9BV7BtX7CzdT1RX8CBz8uial9OO/5Hn6ZOhevJzCImhwb4DuT2IjG2SxsoEp0H+JnIiqUPw+sOShcDqdqb9Vnj4Rlqll02eDwWeA9Xg==
-    - secure: IcK7iEpLYQmpAADpPmVZqG4BvIC4FcTLFLd1ZjJcb/RSjaXpol4+VLAv5Q0PgUrFVpPL6ZiZhGo1Qgvq9B43e21k/llMalWvrDOAlGTGtbXs31NUsAN1bN4+vqLW1yJSwYEMa3WXrJvvq2mlhoeqxFjLXLMq2Rm5EPEzU3FmU5vEPzpRoSQBgRMNL/yPw+pXH9/HwvCLV5w6411/U6cgF/KV7/j288jUA5I0PPZkWAtldhqltSIifTPP8af1TYGk9vLjpiLEUlbHMLhXQhA0kcyNB0JyB61OhCFjqLu/d5dQvQFzq0tOb8Cdsv2VtNYikHVVSSe3UHSthsLkIW/aBg==
+    - secure: mKb8jZ3CNof/C0aOUZBAnN2xDp0NUv51hwn4qDcrT17v7xSkkmIwtO4oOIEGt1L8dGcrRVHndwZoHPVF7DhRv3tjvezZ4gavHeL5l5uykODg1/FTfMfmI+6i2rTiORv4aazXBlOXJIiqlUyvi+vTUETdS/dVSyATfXy8lqV36U47uqBiIrfD2ucmfm8z6RUvqHQzr+M1fD7A0b+XiLpFTNU2hNvaPrVdx2Fg10izQpm9nfWxA7V3qRI/uU2jMksTqbdZm/bJYGuNhAJWVo+1mFgMvwRweSmmZYkUE2QOQVviMwebyD8ADs67t4MpxRIrIPjUOJg4Vm+gPqSiwuoLhQ==
+    - secure: IrWb9lp+jhIGZsqP1wvY0etAsDlILrGvCHiWqMj87/BInydA8yzoJyZiExCWCo94D88SrmTxBDY2Aeqn97Wb5fQ6V23lEoXAJ8GQo1X2pU8Xe2QOnVocRXT+SwW3Qh9pA/5j9wQIGG5yd3YHhn39k6jYjbnjwN0TJtx4g6K3/a2DoBvIEeJzmiFVIj8sBhQOCBRCuTc5OkkhhFw6GJZy5OOy/XfhtEJyfx0XVEr3lNdI2LsKIzSgsJ9EVNRMqcVEjIMLSdKqltGWXnaFvn6zD4ZicvFxxh45aIgMg5RjOAdLfVQZ5WX5Kxe/9zCUIIArc62g1YRp3DY1Vdo5dy/LEA==
 build:
   cache: true
-  
+  pre_ci:
+  - cat ~/.aws/credentials
   ci:
-    - ls -a /home/shippable/cexec
+    - echo $AWS_ACCESS_KEY_ID
+    - echo $AWS_SECRET_ACCESS_KEY
     - aws s3api put-object --bucket bababa1234 --key cache/test --body ./docker.sh 
     - aws s3api get-object --bucket bababa1234 --key cache/56cd870bc77dae78a8e98dfc /home/shippable/cache/56cd870bc77dae78a8e98dfc
     - npm install
