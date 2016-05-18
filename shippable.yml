@@ -2,7 +2,10 @@ node_js:
   - '0.12'
 env:
   global:
-    - one=1
+
+    - REGISTRY_ACCESS_KEY=AKIAJMSIDZDERDQFJMNQ
+    - REGISTRY_SECRET_KEY=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
+    - REGISTRY_REGION=us-east-1
     - secure: HHZjOipULaj3nciknj+XA9PbFP/u15iWPPMJFWiH9cCGvPi/mnXiopw+HYStnA+PGXFH8q1ShfCaWT4ic8ZkWJwNDB5g7CKaN562syQTGP0dfb2M9TDHbWKZ9yGXcXMxgHx3JUL8IuqQA/X4HVmyn7GnPcQ/Gtu4noYM0/zY0hQhhoKWlbqfIhvgskCGUxztKsGuZH9doD+P3xWIYXPCjcWumqxEQGVLR37aNLptM/o27kT/McErd6WZN2JQkCW95iS7bh1C8WKyYajTS/29BAv/IWgfLCdRJSp5+18N6J8wVeGGkkp+U6CjSmvp0e9dKPToqskBVnLMJxeedvippA==
     - secure: Mfm3RxbqikVXwsb3Yq2tyDnE3th3+mf/YGbb+UJBMkqbPzShzjhxfb9PZ+g+bg3unpp6JAE0MXbIdf0TvabJaLsNhnwCgm11X7rO8zKsdLpUwACUT2Fakx237gZ3Na36VERePCccTbYBzSHzgeI/OaZjXZUtehwddO38smT6Lgx94f00kk43Zdn3LXYonahrBghEaT/e3Fx6bRigBEB/Jb/ctyoabEL4BXzk7Yz9s0WNENyipFhHzP8xS7E41akBsMIyDkNDbe/pc1TJ746HKS+GvpuZksf7ynTNVVjvo+DqMjqcXAcrfMgv1//7u3C+mkJdyJGhjByQ+9wrwmS4+g==
 
