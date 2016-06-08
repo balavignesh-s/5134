@@ -2,9 +2,19 @@ language: node_js
 
 node_js:
   - '0.12'
-
+env:
+  global:
+    - one=1
+    - two=2
 build:
   preci: 
     - date -u
   ci:
     - echo "This is !"
+
+integrations:
+  hub:
+    - integrationName: "slack"
+      type: slack
+      on_start:always
+      on_success:always
