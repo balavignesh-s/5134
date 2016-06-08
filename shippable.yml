@@ -18,3 +18,8 @@ integrations:
       type: webhook
       on_start: always
       on_success: always
+   - integrationName: "webhook_1"
+      type: webhook
+      on_start: never
+      on_success: always
+    
