@@ -13,7 +13,7 @@ build:
     - echo "This is !"
 
 integrations:
-  hub:
+  notifications:
     - integrationName: "slack"
       type: slack
       on_start:always
