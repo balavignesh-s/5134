@@ -14,7 +14,7 @@ build:
 
 integrations:
   notifications:
-    - integrationName: "slack"
-      type: slack
-      on_start:always
-      on_success:always
+    - integrationName: "webhook"
+      type: webhook
+      on_start: always
+      on_success: always
