@@ -21,6 +21,7 @@ integrations:
       type: webhook
       on_start: always
       on_success: never
+      on_pull_request: always
       payload:
         - one=$SHIPPABLE_ARTIFACTS_DIR
         - two=$BRANCH
@@ -30,6 +31,7 @@ integrations:
       type: webhook
       on_start: never
       on_success: always
+      on_pull_request: always
       payload:
         - four=$SHIPPABLE_BUILD_DIR
         - five=$COMMIT
