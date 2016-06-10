@@ -34,4 +34,7 @@ integrations:
       type: webhook
       on_start: never
       on_success: always
+      payload:
+        - component=$REPO_NAME
+        - version=$COMMIT
     
