@@ -25,12 +25,13 @@ integrations:
       payload:
         - one=$SHIPPABLE_ARTIFACTS_DIR
         - two=$BRANCH
+        - three=three
       
     - integrationName: "webhook_1"
       type: webhook
       on_start: never
       on_success: always
       payload:
-        - three=$SHIPPABLE_BUILD_DIR
-        - four=$COMMIT
-    
+        - four=$SHIPPABLE_BUILD_DIR
+        - five=$COMMIT
+        - six=six
