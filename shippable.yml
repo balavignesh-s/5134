@@ -21,20 +21,16 @@ integrations:
     - integrationName: "webhook"
       type: webhook
       on_start: always
-      on_success: always
+      on_success: never
       payload:
-        - component=$REPO_NAME
-        - version=$COMMIT
-        - description=$COMPARE_URL
-        - owner=$ORG_NAME
-        - source=Shippable
-
+        - one=$SHIPPABLE_ARTIFACTS_DIR
+        - two=$BRANCH
       
     - integrationName: "webhook_1"
       type: webhook
       on_start: never
       on_success: always
       payload:
-        - component=$REPO_NAME
-        - version=$COMMIT
+        - three=$SHIPPABLE_BUILD_DIR
+        - four=$COMMIT
     
