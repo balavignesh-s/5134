@@ -8,6 +8,7 @@ env:
     - two=2
   matrix:
     - a=1
+    - b=2
 build:
   preci: 
     - date -u
