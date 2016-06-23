@@ -3,15 +3,19 @@ node_js:
 env:
   matrix:
     - one=1
-    - two=2
-    - three=3
     #- secure: e3nCTj7JdJuHt+6eLlSazU4UHpaO9DYWbFNN6Mb9fUWZDindhJvgh89hgY9wOT8TS2ZUg1xbjSG18YvuWW7QG4dCctDPO4hPsRqRag0AXewi4fw7V4hxzLbOgWtjAYPrj//mDdi/JC4zv6Mwp3mUapVecwoh64Pk2pjcuWfXSgJhvwHznS7gCrGAqhzsFhv+yhO52CzJowkkksDJ8vd9U9TauGlnVNhzkMy57qkR7ivPPceITxzA7tWLcVtOe82JDt7esIftd6JYeuAddZabyP6R6pu3l0uVTV47HdZKacJYbwt4rP3PQ8hi5KmlGluzaxIsqhVVnljO4IO1+2hRIw==
     #- secure: zfaNYLF/E9ATj69JsQq+oWoZaz/hjeRPiBS4FSfYREbEVNRFQ0T5rgQJWdvPvmaNvZ52D2Ghx85RAHFMmjXSJJVAYUV9l/Os4zv3XHlY3X7zbDscsEDVa5ce+6cYLgEgAqVKWgoQbWaiDijyg7YG9A6CldvhkyjLEy1zBVpplniEFzzg/Vqtm78F9CiQZ1+TXdfeFczq/XfggHk+msy+5rx/g5SMYCJm4OeoIt135HKeQWlLH5DlXXX0EzCgckksEZLgkQKcY+HpzpKJLYovPB1LbE2HFK5vbmaloL1dHOvu/C6pzfdbrxVSZOFclrhDs/8s4Nmq71hnelbfUdwGPA==
 build:
   #cache: true
   ci:
-    - echo $AWS_ACCESS_KEY_ID
-    - echo $AWS_SECRET_ACCESS_KEY
-    - aws s3api put-object --bucket bababa1234 --key cache/test --body ./docker.sh 
-    - npm install
     - echo "is fork $IS_FORK"
+
+integrations:
+  notifications:
+    - integrationName: webhook
+      type: webhook
+      payload:
+        - one=1
+        - two=2
+        - hosts=["hello"]
+      on_success: always
