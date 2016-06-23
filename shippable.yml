@@ -9,7 +9,6 @@ build:
   #cache: true
   ci:
     - echo "is fork $IS_FORK"
-    - sleep 2m
 integrations:
   notifications:
     - integrationName: webhook
