@@ -11,10 +11,29 @@ build:
     - echo "is fork $IS_FORK"
 integrations:
   notifications:
-    - integrationName: webhook
-      type: webhook
-      payload:
-        - one=1
-        - two=2
-        - hosts=["hello"]
-      on_success: always
+        - integrationName: webhook
+          type: webhook
+          payload:
+            hosts: ["testing"]
+            commit: $SHIPPABLE_COMMIT_RANGE
+            buildLink: ["$BUILD_URL"]
+            success: true
+            message: "build success"
+            started: false
+          on_success: always
+          on_start: never
+          on_failure: never
+          
+        - integrationName: webhook
+          type: webhook
+          payload:
+            hosts: 
+              - "testing"
+            commit: $SHIPPABLE_COMMIT_RANGE
+            buildLink: ["BUILD_URL"]
+            success: false
+            started: true
+            message: "build started"
+          on_success: never
+          on_start: always
+          on_failure: never
