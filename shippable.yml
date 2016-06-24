@@ -17,9 +17,7 @@ integrations:
             hosts: "testing"
             commit: $SHIPPABLE_COMMIT_RANGE
             buildLink: "$BUILD_URL"
-            success: true
             message: "build success"
-            started: false
           on_success: always
           on_start: never
           on_failure: never
