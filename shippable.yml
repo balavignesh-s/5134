@@ -27,8 +27,7 @@ integrations:
         - integrationName: webhook
           type: webhook
           payload:
-            hosts: 
-              - "testing"
+            hosts: "testing"
             commit: $SHIPPABLE_COMMIT_RANGE
             buildLink: "BUILD_URL"
             success: false
