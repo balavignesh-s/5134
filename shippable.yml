@@ -23,16 +23,3 @@ integrations:
           on_success: always
           on_start: never
           on_failure: never
-          
-        - integrationName: webhook
-          type: webhook
-          payload:
-            hosts: "testing"
-            commit: $SHIPPABLE_COMMIT_RANGE
-            buildLink: "BUILD_URL"
-            success: false
-            started: true
-            message: "build started"
-          on_success: never
-          on_start: always
-          on_failure: never
