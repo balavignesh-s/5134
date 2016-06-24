@@ -14,7 +14,7 @@ integrations:
         - integrationName: webhook
           type: webhook
           payload:
-            hosts: "testing"
+            hosts: testing"sdfsdfs
             commit: $SHIPPABLE_COMMIT_RANGE
             buildLink: "$BUILD_URL"
             message: "build success"
