@@ -15,7 +15,7 @@ integrations:
           type: webhook
           payload:
             hosts:
-              - host1
+              - "host1"
             commit: $SHIPPABLE_COMMIT_RANGE
             buildLink: "$BUILD_URL"
             message: "build success"
