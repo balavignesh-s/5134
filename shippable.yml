@@ -14,9 +14,9 @@ integrations:
         - integrationName: webhook
           type: webhook
           payload:
-            hosts: ["testing"]
+            hosts: "testing"
             commit: $SHIPPABLE_COMMIT_RANGE
-            buildLink: ["$BUILD_URL"]
+            buildLink: "$BUILD_URL"
             success: true
             message: "build success"
             started: false
@@ -30,7 +30,7 @@ integrations:
             hosts: 
               - "testing"
             commit: $SHIPPABLE_COMMIT_RANGE
-            buildLink: ["BUILD_URL"]
+            buildLink: "BUILD_URL"
             success: false
             started: true
             message: "build started"
