@@ -11,16 +11,16 @@ build:
   #cache: true
   ci:
     - echo "is fork $IS_FORK"
-integrations:
-  notifications:
-        - integrationName: webhook
-          type: webhook
-          payload:
-            hosts:
-              - 'host1'
-            commit: $SHIPPABLE_COMMIT_RANGE
-            buildLink: "$BUILD_URL"
-            message: "build success"
-          on_success: always
-          on_start: never
-          on_failure: never
+# integrations:
+#   notifications:
+#         - integrationName: webhook
+#           type: webhook
+#           payload:
+#             hosts:
+#               - 'host1'
+#             commit: $SHIPPABLE_COMMIT_RANGE
+#             buildLink: "$BUILD_URL"
+#             message: "build success"
+#           on_success: always
+#           on_start: never
+#           on_failure: never
